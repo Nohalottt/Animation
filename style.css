@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  /* align-items: center;
+  height: 300px; */
+  /* background-color: black; */
+    
+}
+ h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: red;
+} 
+.paper{
+    background: url(pre.jpg);
+    width: calc(1440px/5);
+    width: 300%;
+    height: 600px;
+    animation: img-animation 10s steps(5) infinite;
+    /* position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  left: 50%;
+  right: 60%; */
+  justify-content: center;
+  
+  
+}
+@keyframes img-animation{
+    from{
+        background-position: 0;
+
+    }
+    to{
+        background-position: -1440px;
+
+    }
+}
